@@ -1,0 +1,34 @@
+* MSP430 Projects
+** Updated 2017-10-08
+
+This repository will document development of MSP430 projects using `MSP430-GCC` and `mspdebug`.
+
+This [document](http://www.phas.ubc.ca/~michal/phys319/tools_install-linux.pdf) has been very very helpful to get the workflow and tools setup in Linux:
+
+
+** General Workflow
+
+1. Follow the Makefile in `cblink`
+
+$ cd examples/cblink
+$ make
+
+2. Enter `mspdebug`
+
+$ mspdebug rf2500
+
+3. Deploy to the MSP430
+
+$ prog main.elf
+
+CTRL+D
+
+** Active Projects
+
+*** Bike Generator Diagnostics System
+
+This project will use an MSP430 to read a current sensor, bicycle tachometer, and send serial data to some other device, like a laptop or Raspberry Pi.  Initially, the data will be read by a Python application and plotted using Plotly in a Jupyter notebook.
+
+
+
+
